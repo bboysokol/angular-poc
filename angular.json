@@ -17,6 +17,7 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
+            "tsConfig": "./tsconfig.json",
             "assets": [],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.css"],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
@@ -80,5 +81,8 @@
       }
     }
   },
-  "defaultProject": "demo"
+  "defaultProject": "demo",
+  "cli": {
+    "analytics": false
+  }
 }
