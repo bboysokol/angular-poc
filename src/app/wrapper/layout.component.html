@@ -1,0 +1,14 @@
+<div class="d-flex vw-100 flex-wrap">
+  <ng-container *ngIf="step$ | async as step">
+    <block-a
+      class="bg-white"
+      [class]="step === '2' ? 'd-none' : 'col-4'"
+    ></block-a>
+    <block-b
+      class="bg-white"
+      [class]="step === '2' ? 'col-4' : 'col-8'"
+    ></block-b>
+    <block-c class="col-8 bg-white" *ngIf="step === '2'"></block-c>
+    {{ step === '2' ? 'BLOCK A IS COLLAPSED NOW' : '' }}
+  </ng-container>
+</div>
